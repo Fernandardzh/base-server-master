@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div>
+	{% if error %}
+		<p>{{ error.message }}</p>
+	{% endif %}
+	<form method="POST" action="/sign-up">
+		<p>Name: <input name="username"/></p>
+		<p>Password: <input name="password" type="password"/></p>
+		<p><button type="submit">Create user</button></p>
+	</form>
+</div>
+</body>
+</html>

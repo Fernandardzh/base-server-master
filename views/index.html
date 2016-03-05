@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Welcome to :Proyect Name:</h1>
+
+	{% if user %}
+	<p>Hello {{ user.username }}</p>
+	<ul>
+		<li><a href="/add-listing">Add listings</a></li>
+		<li><a href="/log-out">Log out</a></li>
+	</ul>
+	{% else %}
+	<p>Sign up or log in to add listings</p>
+	<ul>
+		<li><a href="/sign-up">Sign up</a></li>
+		<li><a href="/log-in">Log in</a></li>
+	</ul>
+	{% endif %}
+</body>
+</html>
